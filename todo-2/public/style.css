@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    /* background: linear-gradient(135deg, #4ba7ab, #2e6e70); */
+    /* background: linear-gradient(135deg, #7b2049, #7b2049); */
+    /* background: linear-gradient(135deg, #5d2789, #5d2789); */
+    /* background: linear-gradient(135deg, #e3856b, #e3856b); */
+    /* background: linear-gradient(135deg, #d95654, #d95654); */
+    /* background: linear-gradient(135deg, #80c4b7, #80c4b7); */
+    background: linear-gradient(135deg, #2a2b2d, #2a2b2d);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+    margin: 0;
+    animation: fadeInUp 0.5s ease-in-out forwards;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #e3856b;
+    margin-bottom: 20px;
+    font-family: "Orbitron", sans-serif;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    width: 250px;
+    font-size: 20px;
+    font-weight: 600;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.3);
+    color: #e3856b;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: "Orbitron", sans-serif;
+}
+button {
+    padding: 10px 20px;
+    margin: 0px 0px 0px 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.3);
+    color: #e3856b;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: "Orbitron", sans-serif;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.3);
+    color:#e3856b;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Orbitron", sans-serif;
+}
+
+.delete-btn {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+     font-family: "Orbitron", sans-serif;
+}
+
+.delete-btn:hover {
+    background: rgba(255, 0, 0, 0.5);
+     font-family: "Orbitron", sans-serif;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
